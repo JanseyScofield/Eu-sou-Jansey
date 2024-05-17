@@ -2,7 +2,14 @@ import 'package:flutter/material.dart';
 
 void main() {
   runApp(
-    MaterialApp(
+   MyApp()
+  );
+}
+
+class MyApp extends StatelessWidget{
+  @override
+  Widget build(BuildContext context){
+    return  MaterialApp(
       debugShowCheckedModeBanner : false,
       home: Scaffold(
         backgroundColor: Colors.black12,
@@ -13,11 +20,11 @@ void main() {
         ),
         body: const Center(
             child: Image(
-          image: AssetImage(
+            image: AssetImage(
             "images/eu.jpeg"
             ),
         )),
       ),
-    ),
-  );
+    );
+  }
 }
